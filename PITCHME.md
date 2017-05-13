@@ -16,15 +16,13 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 
 ---
 
-### Coder Proprement
-#### La règle du boy-scout
+### La règle du boy-scout
 
 *Laissez le campement plus propre que vous ne l’avez trouvé en arrivant.*
 
 ---
 
-# Coder Proprement
-## Quelques règles générales :
+### Quelques règles générales :
 
 - Un fichier par classe, interface ou énum
 - Un namespace par fonctionnalité
@@ -38,8 +36,7 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 
 ---
 
-# Coder Proprement
-## Les classes
+### Les classes
 
 - Moins de 1000 lignes
 - Toujours privilégier du code non static : 
@@ -53,8 +50,7 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 
 ---
 
-# Coder Proprement
-## Les méthodes
+### Les méthodes
 
 - Un nom explicite
 - S'occupe d’une et une seule chose
@@ -69,8 +65,7 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 
 --- 
 
-# Coder Proprement
-## Les tests
+### Les tests
 
 - Ce qui s'applique au code de production, s'applique aux tests !
 - Penser aux tests dès la phase de développement
@@ -80,16 +75,14 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 
 ---
 
-# Coder Proprement
-## Les commentaires
+### Les commentaires
 
 - Documenter un fonctionnement un peu touchy
 - Les commentaires se doivent d'être utiles et non utiliser systématiquement pour commenter chaque étape de son code
 
 ---
 
-# Coder Proprement
-## La mise en forme
+### La mise en forme
 
 - L'indentation (espaces ou tabulation) doit être définit en amont
 - Mise en forme horizontale : la barre de scoll horizontale ne devrait pas apparaître dans votre IDE
@@ -119,8 +112,7 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 
 ---
 
-# Best Practices
-## Les conventions de nommage
+### Les conventions de nommage
 
 - Les interfaces : toujours précédées par « I »
   - IProduct, IProvider, ISurvey
@@ -134,8 +126,7 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 
 ---
 
-# Best Practices
-## Les conventions de nommage
+### Les conventions de nommage
 
 - Champs / variables de classe private : _myVar
 - Propriétés public : MyProperty { get; set; }
@@ -159,23 +150,23 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 
 ---
 
-# Pour aller plus loin…
+### Pour aller plus loin…
 
-### 31 Days of Refactoring
+31 Days of Refactoring
   - https://lostechies.com/wp-content/uploads/2011/03/31DaysRefactoring.pdf
   - https://lostechies.com/seanchambers/2009/07/31/31-days-of-refactoring/
 
 ---
 
-# Références
+### Références
 
-### C# Coding Guidelines
+C# Coding Guidelines
   - https://github.com/dennisdoomen/CSharpGuidelines/releases
   - http://www.dofactory.com/reference/csharp-coding-standards
 
-### Coder Proprement
+Coder Proprement
 
-### Mots clés interdits
+Mots clés interdits
   - http://www.codethinked.com/ten-c-keywords-that-you-shouldne28099t-be-using
   - http://stackoverflow.com/questions/31859016/is-the-use-of-dynamic-considered-a-bad-practice
 
