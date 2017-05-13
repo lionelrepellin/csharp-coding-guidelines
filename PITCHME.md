@@ -2,22 +2,22 @@
 
 ---
 
-# Quelques principes de base
+### Quelques principes de base
 
-### KISS : https://fr.wikipedia.org/wiki/Principe_KISS
+KISS : https://fr.wikipedia.org/wiki/Principe_KISS
 
-### DRY : https://fr.wikipedia.org/wiki/Ne_vous_r%C3%A9p%C3%A9tez_pas
+DRY : https://fr.wikipedia.org/wiki/Ne_vous_r%C3%A9p%C3%A9tez_pas
 
-### YAGNI : https://fr.wikipedia.org/wiki/YAGNI
+YAGNI : https://fr.wikipedia.org/wiki/YAGNI
 
-### SOLID : https://www.exceptionnotfound.net/tag/solid-principles/
+SOLID : https://www.exceptionnotfound.net/tag/solid-principles/
 
-### Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
+Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 
 ---
 
-# Coder Proprement
-## La règle du boy-scout
+### Coder Proprement
+#### La règle du boy-scout
 
 *Laissez le campement plus propre que vous ne l’avez trouvé en arrivant.*
 
