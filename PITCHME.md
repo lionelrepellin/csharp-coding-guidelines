@@ -44,7 +44,7 @@
 ### Les classes
 
 - Moins de 1000 lignes
-- Toujours privilégier du code non static : 
+- Toujours privilégier du code non statique : 
   - testable / mockable
   - comportement polymorphe : penser objet !
   - héritage technique possible
@@ -109,6 +109,7 @@
     public int WheelsCount { get; set; }
     public string Color { get; set; }
 ```
+
   - on rentre dans l'habitacle, il y a un GPS : les champs privés (non visible de l'extérieur) :
 ```csharp  
     private bool _hasGps = true;
@@ -118,7 +119,7 @@
 
 ### La mise en forme horizontale
 
-  - on met le contact, c'est le constructeur !
+  - on met le contact, c'est le constructeur ! ;)
 
   - le véhicule peut avancer, reculer, tourner à gauche et à droite : les méthodes publiques
 ```csharp  
@@ -151,16 +152,16 @@
 ```csharp
     enum Status { Bad, Medium, Good }
 ```
-- Interfaces, classes et enum : PascalCase
 
 ---
 
 ### Les conventions de nommage
 
-- Champs / variables de classe private :
+- Champs / variables de classe privées :
 ```csharp
     private int _myVar;
 ```
+
 - Propriétés publiques : 
 ```csharp
     public MyProperty { get; set; }
@@ -170,12 +171,17 @@
 
 ### Les conventions de nommage
 
-- Constantes
+- Les constantes de méthode
+```csharp
+    const string Discriminator = "abc";
+```
+
+- Les constantes de classe
 ```csharp
     public const int MyConst = 123;
 ```
 
-- Variable de méthode
+- Les variables à l'intérieur des méthodes
 ```csharp
     var myVar = "abc";
 ```
@@ -213,12 +219,12 @@
 
 ### Références
 
+Coder Proprement de Robert C.Martin (2009)
+  - https://www.amazon.fr/Coder-proprement-Robert-C-Martin/dp/2744023272
+
 C# Coding Guidelines
   - https://github.com/dennisdoomen/CSharpGuidelines/releases
   - http://www.dofactory.com/reference/csharp-coding-standards
-
-Coder Proprement de Robert C.Martin (2009)
-  - https://www.amazon.fr/Coder-proprement-Robert-C-Martin/dp/2744023272
 
 Mots clés interdits
   - http://www.codethinked.com/ten-c-keywords-that-you-shouldne28099t-be-using
