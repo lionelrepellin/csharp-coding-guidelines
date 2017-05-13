@@ -1,4 +1,4 @@
-## Bonnes Pratiques de Codage en C\#
+## Bonnes Pratiques de Codage en CSharp
 
 ---
 
@@ -98,7 +98,7 @@
 
 - Mise en forme horizontale : la barre de scoll horizontale ne devrait pas apparaître dans votre IDE
 
-- Mise en forme verticale : pensez à ce que vous voyez - dans l'ordre - lorsque vous rentrez dans votre voiture :
+- Mise en forme verticale : pensez à ce que vous voyez **dans l'ordre** lorsque vous rentrez dans votre voiture :
 
 +++
 
@@ -143,7 +143,7 @@
 
 ### Les conventions de nommage
 
-- Les interfaces : toujours précédées par « I »
+- Les interfaces : toujours préfixées par « I »
   - IProduct, IProvider, ISurvey
 
 - Les classes : jamais suffixées par « Class » 
