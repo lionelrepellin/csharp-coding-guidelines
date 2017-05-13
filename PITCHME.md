@@ -1,4 +1,4 @@
-## Bonnes Pratiques de Codage en CSharp
+## Bonnes Pratiques de Codage en C Sharp
 
 ---
 
@@ -36,7 +36,7 @@
 
 - Pas de : out, ref, goto, continue, implicit, unsafe *(cf. mots clés interdits)*
 - Créer des exceptions personnalisées
-- Jamais de catch vide !
+- Jamais de *catch* vide !
 - Les propriétés reflètent l'état d'un objet (pas de logique métier !)
 
 ---
@@ -58,7 +58,7 @@
 
 - Un nom explicite
 - S'occupe d'une et une seule chose
-- Un seul return
+- Un seul *return*
 - Courtes : entre 50 et 100 lignes max
 - 3 paramètres distincts maximum *(idéalement zéro)* : 
   - au-delà, passer un objet
@@ -164,7 +164,7 @@
 
 - Propriétés publiques : 
 ```csharp
-    public MyProperty { get; set; }
+    public string MyProperty { get; set; }
 ```
 
 +++
@@ -178,7 +178,7 @@
 
 - Les constantes de classe
 ```csharp
-    public const int MyConst = 123;
+    public const int TheAnswer = 42;
 ```
 
 - Les variables à l'intérieur des méthodes
@@ -192,7 +192,7 @@
 
 - **this** sert à identifier les propriétés / méthodes héritées ; il n'est pas utile de le faire précéder chaque appel de propriétés / méthodes de la classe courante.
 
-- Utiliser les **alias** (string, int, bool, object au lieu de String, Int32, Boolean, Object…)
+- Utiliser les **alias** (string, int, bool, object au lieu de String, Int32, Boolean, Object...)
 
 ---
 
@@ -226,6 +226,9 @@ Coder Proprement de Robert C.Martin (2009)
 C# Coding Guidelines
   - https://github.com/dennisdoomen/CSharpGuidelines/releases
   - http://www.dofactory.com/reference/csharp-coding-standards
+
+Microsoft Framework Design Guidelines
+  - https://docs.microsoft.com/en-us/dotnet/articles/standard/design-guidelines/index
 
 Mots clés interdits
   - http://www.codethinked.com/ten-c-keywords-that-you-shouldne28099t-be-using
