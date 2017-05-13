@@ -23,44 +23,43 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 - Eviter la notation hongroise
 - Eviter les abréviations 
 - Switch : penser polymorphisme
-- Pas de : out, ref, goto, continue, implicit, unsafe (cf. mots clés interdits)
+- Pas de : out, ref, goto, continue, implicit, unsafe *(cf. mots clés interdits)*
 - Créer des exceptions personnalisées
 - Jamais de catch vide !
-- Pas de logique métier dans les propriétés : elles reflètent l'état d'un objet
+- Les propriétés reflètent l'état d'un objet (pas de logique métier !)
 ---
 ### Les classes
 - Moins de 1000 lignes
 - Toujours privilégier du code non static : 
   - testable / mockable
-  - comportement polymorphe
+  - comportement polymorphe : penser objet !
   - héritage technique possible
   - design pattern
-  - penser objet !
-- Responsabilité unique (principe SOLID)
-- Pas de nom de classe fourre-tout : Common, Global, etc.
+- Responsabilité unique *(principe SOLID)*
+- Pas de nom de classe fourre-tout : Common, Global...
 ---
 ### Les méthodes
 - Un nom explicite
-- S'occupe d’une et une seule chose
+- S'occupe d'une et une seule chose
 - Un seul return
-- Courtes : entre 50 et 100 lignes max (on ne décrypte pas, on lit !)
-- 3 paramètres distincts maximum (idéalement zéro) : 
+- Courtes : entre 50 et 100 lignes max *(on ne décrypte pas, on lit !)*
+- 3 paramètres distincts maximum *(idéalement zéro)* : 
   - au-delà, passer un objet
   - penser aux tests !
 - Pas de booléen en argument qui modifie le comportement
 - Ne pas passer *null* et ne pas renvoyer *null*
-- Pas de logique métier dans les méthodes d’extension : créer un service
+- Pas de logique métier dans les méthodes d'extension : créer un service
 --- 
 ### Les tests
 - Ce qui s'applique au code de production, s'applique aux tests !
 - Penser aux tests dès la phase de développement
-- Les tests doivent être rapides à coder et à s’exécuter
+- Les tests doivent être rapides à coder et à s'exécuter
 - Un seul concept et un seul Assert par test
 - Le projet de tests reflète l'arborescence du projet testé
 ---
 ### Les commentaires
-- Documenter un fonctionnement un peu touchy
-- Les commentaires se doivent d'être utiles et non utiliser systématiquement pour commenter chaque étape de son code
+- Documenter un fonctionnement un peu *touchy*
+- Les commentaires se doivent d'être utiles et non utilisés systématiquement pour commenter chaque étape de son code
 ---
 ### La mise en forme
 - L'indentation (espaces ou tabulation) doit être définit en amont
@@ -68,14 +67,14 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 - Mise en forme verticale : pensez à ce que vous voyez - dans l'ordre - lorsque vous rentrez dans votre voiture :
   - la voiture a quatre roues, elle est de couleur rouge : les propriétés publiques
 ```csharp
-    public int WheelCount { get; set; }
+    public int WheelsCount { get; set; }
     public string Color { get; set; }
 ```
-  - on rentre dans l'habitable, il y a un GPS : les champs privés (non visible de l'extérieur) :
+  - on rentre dans l'habitacle, il y a un GPS : les champs privés (non visible de l'extérieur) :
 ```csharp  
     private bool _hasGps = true;
 ```
-  - on met le contact, c'est le constructeur
+  - on met le contact, c'est le constructeur !
   - le véhicule peut avancer, reculer, tourner à gauche et à droite : les méthodes publiques
 ```csharp  
     public void GoForward();
@@ -83,8 +82,8 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
     public void TurnLeft();
     public void TurnRight();
 ```
-  - on allume l'autoradio ou l'allume-cigare : méthodes privées
-```csharp  
+  - on allume l'auto-radio ou l'allume-cigare : les méthodes privées
+```csharp
     private void TrunOnTheRadio();
     private void TurnOnTheCigaretteLighter();
 ```
@@ -100,12 +99,24 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 - Interfaces, classes et enum : PascalCase
 ---
 ### Les conventions de nommage
-- Champs / variables de classe private : _myVar
-- Propriétés public : MyProperty { get; set; }
-- Constantes : MyConst
-- Variable de méthode : myVar
-- this sert uniquement à identifier les propriétés / méthodes héritées
-- Utiliser les alias (string, int, bool, object au lieu de String, Int32, Boolean, Object…)
+- Champs / variables de classe private :
+```csharp
+    private int _myVar;
+```
+- Propriétés publiques : 
+```csharp
+    public MyProperty { get; set; }
+```
+- Constantes
+```csharp
+    public const int MyConst = 123;
+```
+- Variable de méthode
+```csharp
+    var myVar = "abc";
+```
+- **this** sert à identifier les propriétés / méthodes héritées ; il n'est pas utile de le faire précéder chaque appel de propriétés / méthodes de la classe courante.
+- Utiliser les **alias** (string, int, bool, object au lieu de String, Int32, Boolean, Object…)
 ---
 # Les outils
 ### Move Class to File
@@ -125,7 +136,8 @@ C# Coding Guidelines
   - https://github.com/dennisdoomen/CSharpGuidelines/releases
   - http://www.dofactory.com/reference/csharp-coding-standards
 
-Coder Proprement
+Coder Proprement de Robert C.Martin (2009)
+  - https://www.amazon.fr/Coder-proprement-Robert-C-Martin/dp/2744023272
 
 Mots clés interdits
   - http://www.codethinked.com/ten-c-keywords-that-you-shouldne28099t-be-using
