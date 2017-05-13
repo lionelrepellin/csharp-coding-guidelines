@@ -48,8 +48,8 @@
   - testable / mockable
   - comportement polymorphe : penser objet !
   - héritage technique possible
-  - design pattern
-- Responsabilité unique *(principe SOLID)*
+  - [Design Patterns](https://github.com/lionelrepellin/design-patterns)
+- Responsabilité unique *(principes SOLID)*
 - Pas de nom de classe fourre-tout : Common, Global...
 
 ---
@@ -98,7 +98,7 @@
 
 - Mise en forme horizontale : la barre de scoll horizontale ne devrait pas apparaître dans votre IDE
 
-- Mise en forme verticale : pensez à ce que vous voyez **dans l'ordre** lorsque vous rentrez dans votre voiture :
+- Mise en forme verticale : pensez à ce que vous voyez lorsque vous rentrez dans votre voiture :
 
 +++
 
@@ -226,6 +226,10 @@ Coder Proprement de Robert C.Martin (2009)
 C# Coding Guidelines
   - https://github.com/dennisdoomen/CSharpGuidelines/releases
   - http://www.dofactory.com/reference/csharp-coding-standards
+
++++
+
+### Références
 
 Microsoft Framework Design Guidelines
   - https://docs.microsoft.com/en-us/dotnet/articles/standard/design-guidelines/index
