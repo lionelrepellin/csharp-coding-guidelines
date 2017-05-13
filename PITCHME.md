@@ -94,7 +94,7 @@
 
 ### La mise en forme
 
-- L'indentation (espaces ou tabulation) doit être définit en amont
+- L'indentation *(espaces ou tabulation)* doit être définit en amont
 
 - Mise en forme horizontale : la barre de scoll horizontale ne devrait pas apparaître dans votre IDE
 
@@ -102,7 +102,7 @@
 
 +++
 
-### La mise en forme horizontale
+### La mise en forme verticale
 
   - la voiture a quatre roues, elle est de couleur rouge : les propriétés publiques
 ```csharp
@@ -117,7 +117,7 @@
 
 +++
 
-### La mise en forme horizontale
+### La mise en forme verticale
 
   - on met le contact, c'est le constructeur ! ;)
 
@@ -131,7 +131,7 @@
 
 +++
 
-### La mise en forme horizontale
+### La mise en forme verticale
 
   - on allume l'auto-radio ou l'allume-cigare : les méthodes privées
 ```csharp
@@ -196,15 +196,15 @@
 
 ---
 
-# Les outils
+### Les outils
 
-### Move Class to File
+Move Class to File
   - https://github.com/filipw/Strathweb.Roslyn
 
-### SonarLint for Visual Studio
+SonarLint for Visual Studio
   - http://www.sonarlint.org/visualstudio/index.html
 
-### SonarQube
+SonarQube
   - https://www.sonarqube.org/
 
 ---
@@ -213,6 +213,7 @@
 
 31 Days of Refactoring
   - https://lostechies.com/wp-content/uploads/2011/03/31DaysRefactoring.pdf
+
   - https://lostechies.com/seanchambers/2009/07/31/31-days-of-refactoring/
 
 ---
@@ -232,6 +233,4 @@ Mots clés interdits
 
 ---
 
-# Keep Calm And Write Good Code
-
----
+# Keep Calm and Write Good Code !
