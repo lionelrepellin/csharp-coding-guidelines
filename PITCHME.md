@@ -42,7 +42,7 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 - Un nom explicite
 - S'occupe d'une et une seule chose
 - Un seul return
-- Courtes : entre 50 et 100 lignes max *(on ne décrypte pas, on lit !)*
+- Courtes : entre 50 et 100 lignes max
 - 3 paramètres distincts maximum *(idéalement zéro)* : 
   - au-delà, passer un objet
   - penser aux tests !
@@ -65,6 +65,7 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 - L'indentation (espaces ou tabulation) doit être définit en amont
 - Mise en forme horizontale : la barre de scoll horizontale ne devrait pas apparaître dans votre IDE
 - Mise en forme verticale : pensez à ce que vous voyez - dans l'ordre - lorsque vous rentrez dans votre voiture :
++++
   - la voiture a quatre roues, elle est de couleur rouge : les propriétés publiques
 ```csharp
     public int WheelsCount { get; set; }
@@ -74,6 +75,7 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 ```csharp  
     private bool _hasGps = true;
 ```
++++
   - on met le contact, c'est le constructeur !
   - le véhicule peut avancer, reculer, tourner à gauche et à droite : les méthodes publiques
 ```csharp  
@@ -82,6 +84,7 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
     public void TurnLeft();
     public void TurnRight();
 ```
++++
   - on allume l'auto-radio ou l'allume-cigare : les méthodes privées
 ```csharp
     private void TrunOnTheRadio();
@@ -107,6 +110,7 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 ```csharp
     public MyProperty { get; set; }
 ```
++++
 - Constantes
 ```csharp
     public const int MyConst = 123;
@@ -115,6 +119,7 @@ Loi de Déméter : https://fr.wikipedia.org/wiki/Loi_de_D%C3%A9m%C3%A9ter
 ```csharp
     var myVar = "abc";
 ```
++++
 - **this** sert à identifier les propriétés / méthodes héritées ; il n'est pas utile de le faire précéder chaque appel de propriétés / méthodes de la classe courante.
 - Utiliser les **alias** (string, int, bool, object au lieu de String, Int32, Boolean, Object…)
 ---
